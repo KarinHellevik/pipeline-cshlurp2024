@@ -1,7 +1,14 @@
 import os
 import subprocess
-video_dir = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/keypointmoseqwork/videos' #change directory of output folder here for the videos and h5 files
-sleap_model_path = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/sleapstuff/240709_092906.multi_instance.n=1301'
+project_dir = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/keypointmoseqwork/' #change directory of project folder
+sleap_model_path = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/sleapstuff/240709_092906.multi_instance.n=1301' #change the directory of your sleap model here
+
+slp_output_dir = os.path.join(project_dir, 'slp_files')
+video_dir = os.path.join(project_dir, 'videos')
+
+# Create 'slp files' directory if it does not exist
+if not os.path.exists(slp_output_dir):
+    os.makedirs(slp_output_dir)
 
 max_tracks = 1 #number of animals you are tracking
 tracker = 'simplemaxtracks'
@@ -9,7 +16,7 @@ for filename in os.listdir(video_dir):
     if filename.endswith('.mp4'):
         input_file = os.path.join(video_dir, filename)
         output_filename = os.path.splitext(filename)[0] + '.slp'
-        output_file_path = os.path.join(video_dir, output_filename)
+        output_file_path = os.path.join(slp_output_dir, output_filename)
         sleap_track_command = f"sleap-track -m {sleap_model_path} " \
                               f"--tracking.tracker {tracker} " \
                               f"--tracking.max_tracking {1} " \
