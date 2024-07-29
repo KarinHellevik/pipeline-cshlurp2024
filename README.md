@@ -41,4 +41,8 @@ The model fitting steps in [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutori
 ## Other Scripts
 
 ##### autokappascan.py
-- This is for if
+- This is for if you want to try multiple different kappas and see what the output would be
+##### sleaplabel.py
+- This is for if any of you guys figure out how to set up the SLEAP environment on the HPC and want to label the videos just using a Python Scrit on the HPC. Code for labeling is already included in the [tutorial.ipynb](tutorial.ipynb) notebook
+##### kpmsreindexandsave.py
+- This is for reindexing and saving a checkpoint as `results.h5` but this is also included in the [tutorial.ipynb](tutorial.ipynb) notebook
