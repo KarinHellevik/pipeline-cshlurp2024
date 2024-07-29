@@ -4,7 +4,7 @@
 - trained SLEAP model
 # Notebooks 
 These notebooks will be ran locally. 
-### [tutorial.ipynb](tutorial.ipynb)
+### [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb)
 #### The Plug-and-Chug Notebook for Getting Your Keypoint Moseq syllable-at-a-frame CSV file and Visualizations:
 ##### This notebook includes:
 1. Re-encoding videos
@@ -43,6 +43,6 @@ The model fitting steps in [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutori
 ##### autokappascan.py
 - This is for if you want to try multiple different kappas and see what the output would be
 ##### sleaplabel.py
-- This is for if any of you guys figure out how to set up the SLEAP environment on the HPC and want to label the videos just using a Python Scrit on the HPC. Code for labeling is already included in the [tutorial.ipynb](tutorial.ipynb) notebook
+- This is for if any of you guys figure out how to set up the SLEAP environment on the HPC and want to label the videos just using a Python Scrit on the HPC. Code for labeling is already included in the [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb) notebook
 ##### kpmsreindexandsave.py
-- This is for reindexing and saving a checkpoint as `results.h5` but this is also included in the [tutorial.ipynb](tutorial.ipynb) notebook
+- This is for reindexing and saving a checkpoint as `results.h5` but this is also included in the [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb) notebook
