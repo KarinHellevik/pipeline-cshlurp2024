@@ -15,7 +15,7 @@ These notebooks will be ran locally.
    - b. Trajectory plots, grid movies, and other visualizations of your behavioral syllables
    - c. ```.csv``` files for analysis
 
-Note: you will have to jump to the [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutorial.ipynb) before going through step **3. Getting Behavioral Syllables** because you will need a Keypoint Moseq model for that. 
+Note: you will have to jump to the [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutorial.ipynb) before going through step **3. Getting Behavioral Syllables** because you will need a Keypoint Moseq model for that. You will also need both keypoint_moseq and sleap environments set up. 
 
 This notebook does not include:
    - how to create and train a SLEAP model
@@ -42,7 +42,9 @@ The model fitting steps in [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutori
 
 ##### autokappascan.py
 - This is for if you want to try multiple different kappas and see what the output would be
+
 ##### sleaplabel.py
 - This is for if any of you guys figure out how to set up the SLEAP environment on the HPC and want to label the videos just using a Python Scrit on the HPC. Code for labeling is already included in the [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb) notebook
+
 ##### kpmsreindexandsave.py
 - This is for reindexing and saving a checkpoint as `results.h5` but this is also included in the [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb) notebook
