@@ -48,3 +48,6 @@ The model fitting steps in [kpmsmodelmakingtutorial.ipynb](kpmsmodelmakingtutori
 
 ##### kpmsreindexandsave.py
 - This is for reindexing and saving a checkpoint as `results.h5` but this is also included in the [plugnchugtutorial.ipynb](plugnchugtutorial.ipynb) notebook
+
+### sample.sh
+- This is a sample `.sh` bash script executable that I would be able to submit to the HPC
