@@ -17,8 +17,8 @@ config = lambda: kpms.load_config(project_dir)
 data, metadata = kpms.format_data(coordinates, confidences, **config())
 pca = kpms.load_pca(project_dir)
 
-# Generate kappas starting from 100,000,000 and increasing by a decimal place
-initial_kappa = 1e3  # 100,000,000.0
+# Generate kappas starting from 1000 and increasing by a decimal place
+initial_kappa = 1e3  # 1000
 num_kappas = 10  # Number of kappas to generate
 kappas = initial_kappa * 10 ** np.linspace(0, num_kappas - 1, num=num_kappas)
 
