@@ -2,7 +2,7 @@ import keypoint_moseq as kpms
 import os
 import h5py
 
-project_dir = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/keypointmoseqwork'
+project_dir = '/grid/shea/data/Karin/tutorialmaking/newkatiesvideomodeling'
 
 print('set project directory')
 
@@ -30,7 +30,7 @@ pca = kpms.load_pca(project_dir)
 model = kpms.init_model(data, pca=pca, **config())
 
 # optionally modify kappa
-model = kpms.update_hypparams(model, kappa=1e3)
+model = kpms.update_hypparams(model, kappa=1e7)
 
 num_ar_iters = 50
 
