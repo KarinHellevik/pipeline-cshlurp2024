@@ -2,7 +2,7 @@ import keypoint_moseq as kpms
 import os
 import h5py
 
-project_dir = '/grid/shea/data_norepl/Karin/tutorialmaking/katiesvideosmodeling/keypointmoseqwork/'
+project_dir = '/grid/shea/data_norepl/Karin/tutorialmaking/katiesvideosmodeling/keypointmoseqwork/' #CHANGE HERE
 
 print('set project directory')
 

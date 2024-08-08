@@ -1,7 +1,7 @@
 import os
 import subprocess
-project_dir = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/keypointmoseqwork/' #change directory of project folder
-sleap_model_path = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/sleapstuff/240709_092906.multi_instance.n=1301' #change the directory of your sleap model here
+project_dir = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/keypointmoseqwork/' #CHANGE HERE
+sleap_model_path = '/grid/shea/data/Karin/tutorialmaking/morekatiesvideosmodeling/sleapstuff/240709_092906.multi_instance.n=1301' #CHANGE HERE the directory of your sleap model here
 
 slp_output_dir = os.path.join(project_dir, 'slp_files')
 video_dir = os.path.join(project_dir, 'videos')
