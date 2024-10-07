@@ -1,3 +1,4 @@
+updated by Karin Hellevik, oct 7 2024
 # Behavioral Tracking and Classification Pipeline
 ##### Before you use this pipeline, you will need
 - video data
